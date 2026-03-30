@@ -74,11 +74,11 @@
 
 
   <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
+  <title>BiCoord</title>
   
   <!-- Favicon and App Icons -->
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link rel="apple-touch-icon" href="static/images/favicon.ico">
+  <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
+  <!-- <link rel="apple-touch-icon" href="static/images/favicon.ico"> -->
   
   <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
@@ -186,53 +186,6 @@
     <i class="fas fa-chevron-up"></i>
   </button>
 
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
 
   <main id="main-content">
   <section class="hero">
@@ -240,22 +193,31 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">BiCoord: A Bimanual Manipulation Benchmark towards Long-Horizon Spatial-Temporal Coordination</h1>
             <div class="is-size-5 publication-authors">
               <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Xingyu Peng</a><sup>*</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="https://chengaopro.github.io/" target="_blank">Chen Gao</a><sup>*</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Liankai Jin</a><sup>*</sup>,
                   </span>
+
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Annan Li</a>,
+                  </span>
+
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=-QtVtNEAAAAJ&hl=zh-CN" target="_blank">Si Liu</a>
+                  </span>
+
+
                   </div>
 
                   <div class="is-size-5 publication-authors">
                     <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
+                    <span class="author-block">Beihang University</span>
                     <!-- TODO: Remove this line if no equal contribution -->
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
                   </div>
@@ -318,14 +280,10 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
+      <img src="static/images/fig.jpg" alt="Overview of BiCoord" loading="lazy"/>
       <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      <h2 class="subtitle">
+        <b><i>Overview of BiCoord.</i></b> (a) The data generation pipeline. (b) An example trajectory of Cook task is exhibited. Each trajectory is divided into several stages with sub-goals and arm behaviours. Besides, key features of bimanual coordination are embodied in BiCoord, like phased coupling, spatial-temporal constraint and predictive coordination. (c) We design metrics to evaluate the bimanual manipulation benchmarks. STI characterizes the temporal and spatial coupling of the dual arms, and long-horizon metrics reflect task length. We also evaluate four methods on BiCoord in both single-task and multi-task setting.
       </h2>
     </div>
   </div>
@@ -341,7 +299,7 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Bimanual manipulation, i.e., the coordinated use of two robotic arms to complete tasks, is essential for achieving human-level dexterity in robotics. Recent simulation benchmarks, e.g., RoboTwin and RLBench2, have advanced data-driven learning for bimanual manipulation. However, existing tasks are short-horizon and only loosely coordinated, failing to capture the spatial-temporal coupling inherent in real-world bimanual behaviors. To address this gap, we introduce BiCoord, a benchmark for long-horizon and tightly coordinated bimanual manipulation. Specifically, BiCoord comprises diverse tasks that require continuous inter-arm dependency and dynamic role exchange across multiple sub-goals. Also, we propose a suite of quantitative metrics that evaluate coordination from temporal, spatial, and spatial-temporal perspectives, enabling systematic measurement of bimanual cooperation. Experimental results show that representative manipulation policies, e.g., DP, RDT, Pi0, and OpenVLA-OFT, struggle with long-duration and highly coupled tasks, revealing fundamental challenges in achieving long-horizon and tight coordination tasks. We hope BiCoord can serve as a foundation for studying long-horizon cooperative manipulation and inspire future research on coordination-aware robotic learning.
           </p>
         </div>
       </div>
@@ -352,34 +310,28 @@
 
 
 <!-- Image carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
-        <!-- TODO: Replace with your research result images -->
         <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
         <h2 class="subtitle has-text-centered">
           First image description.
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
         <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
         <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
          Third image description.
        </h2>
      </div>
      <div class="item">
-      <!-- Your image here -->
       <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
       <h2 class="subtitle has-text-centered">
         Fourth image description.
@@ -388,64 +340,56 @@
   </div>
 </div>
 </div>
-</section>
+</section> -->
 <!-- End image carousel -->
 
 
 
 
 <!-- Youtube video -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <!-- Paper video. -->
       <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
           <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
             <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End youtube video -->
 
 
 <!-- Video carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Another Carousel</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
           <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
             <source src="static/videos/carousel1.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
           <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
             <source src="static/videos/carousel2.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
           <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
             <source src="static/videos/carousel3.mp4" type="video/mp4">
           </video>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End video carousel -->
 
 
@@ -454,18 +398,17 @@
 
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
 
-      <!-- TODO: Replace with your poster PDF -->
       <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
+        </iframe>
+      
     </div>
-  </section>
+  </div>
+</section> -->
 <!--End paper poster -->
 
 
